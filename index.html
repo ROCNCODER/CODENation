@@ -22,7 +22,12 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-202695355-1');
+  gtag('config', 'UA-202695355-1' , {
+  'custom_map': {
+    'dimension1': 'clientId'
+  }
+  });
+	gtag('event', 'action_value', {'clientId': '1467683978.1626938892'});
 </script>
 
 <div class="content">
