@@ -109,7 +109,11 @@
 	
         //предотвращаем переход по ссылке href
         return false;
-	   window.location="corzina.html";
+	    if (return==false){
+	    
+	    document.location.href = "corzina.html"
+	    };
+
     
     }
 }
