@@ -27,7 +27,7 @@
     'dimension1': 'clientId'
   }
   });
-	gtag('event', 'action_value', {'clientId': '1467683978.1626938892'});
+
 </script>
 
 <div class="content">
@@ -49,6 +49,22 @@
 
 	</div>
 </div>
-
+	<script>
+function id()
+{
+    var match = document.cookie.match('(?:^|;)\\s*_ga=([^;]*)');
+    var raw = (match) ? decodeURIComponent(match[1]) : null;
+if (raw)
+{
+match = raw.match(/(\d+\.\d+)$/);
+}
+var gacid = (match) ? match[1] : null;
+if (gacid)
+{
+    return gacid;
+}
+}
+			gtag('event', 'action_value', {'clientId': 'id()'});
+		</script>
 </body>
 </html>
